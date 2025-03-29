@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南景點文繞圖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(0, 181, 236);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+        }
+        .item {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .text {
+            background-color: rgb(124, 233, 133);
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .text:hover {
+            background-color: rgb(255, 149, 0);
+        }
+        .left img {
+            margin-right: 10px;
+        }
+        .right img {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">〈台南景點介紹(4)</h1>
+    </div>
+    <div class="container">
+        <div class="item left">
+            <img src="images.jpg" width="20" height="20" alt="林百貨">
+            <p class="text">林百貨，台南的歷史地標，曾是台灣最早的百貨公司之一，如今仍然保留濃厚的昭和時代風情。</p>
+        </div>
+        <div class="item right">
+            <p class="text">台南孔廟，全台首學，見證了台灣的教育發展，是文化與歷史愛好者的必訪之地。</p>
+            <img src="35100327470_00e85b0dda_c.jpg" alt="孔廟">
+        </div>
+        <div class="item left">
+            <img src="DDEE.jpg" width="20" height="20" alt="赤崁樓">
+            <p class="text">赤崁樓，昔日的荷蘭城堡，如今成為台南的象徵，夜晚燈光點綴，更添一番風味。</p>
+        </div>
+        <div class="item right">
+            <p class="text">國華街，美食天堂，各種小吃讓人垂涎三尺，是台南人與遊客最愛的覓食地。</p>
+            <img src="unnamed.jpg" alt="國華街">
+        </div>
+    </div>
+</body>
+</html>
