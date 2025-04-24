@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排版</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            color: aliceblue;
+            background-color: black;
+            height: 40px;
+        }
+       
+       header a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 900;
+        }
+      header a:hover{
+        color: rgb(12, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; right: 6vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+    nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease;              
+}
+    nav a:hover::after {
+    width: 100%; }
+    .grid-9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3欄 */
+  gap: 10px;                              /* ✅ 格子間距 */
+  max-width: 640px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.grid-9 img {
+  width: 100%;               /* ✅ 滿版圖片 */
+  height: 100%;
+  aspect-ratio: 1/1;         /* ✅ 保持正方形格子 */
+  object-fit: cover;         /* ✅ 圖片裁切不變形 */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.grid-9 img:hover {
+  transform: scale(1.05);    /* ✅ 滑鼠放大效果 */
+  .image {
+  flex: 1;
+  text-align: right; /* 讓圖片貼右邊 */
+} }
+.side-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>@</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">聯絡</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="grid-9">
+                <div class="item"><img src="1.png" width="200" height="100"></div>
+                <div class="item"><img src="2.png" width="200" height="100"></div>
+                <div class="item"><img src="3.png" width="200" height="100"></div>
+                <div class="item"><img src="4.png" width="200" height="100"></div>
+                <div class="item"><img src="5.png" width="200" height="100"></div>
+                <div class="item"><img src="6.png" width="200" height="100"></div>
+                <div class="item"><img src="7.png" width="200" height="100"></div>
+                <div class="item"><img src="8.png" width="200" height="100"></div>
+                <div class="item"><img src="9.png" width="200" height="100"></div>
+              </div>
+              <div class="side-image">
+                <img src="482569209_1313564259706134_5456304972592048502_n.jpg" alt="右側大圖">
+              </div>
+        </main>
+    </header>
+</body>
+</html>
