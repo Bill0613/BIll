@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        html {
+      scroll-behavior: smooth; /* ✨ 啟用平滑滾動 */
+    }
+        .oy{
+        background-color: rgb(255, 115, 0);
+        height: 60px;
+        font-size: 30px;
+        color: aliceblue;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header li{
+            display: inline;
+        }
+        header ul{
+            position: absolute;right: 6vw; top: 0.1vw;
+            letter-spacing: 0.1px;
+        }
+        header a{
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 900
+        }
+        .accttiv{
+            background-color: rgba(243, 179, 3, 0.493);
+        }
+      header a:hover{
+        color: rgb(255, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; right: 6vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+        nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(253, 255, 255);
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; }  
+    
+   
+.ch1 { 
+color: #0000; /*顏色設為透明 */
+margin: 0; 
+font-size: 80px; 
+font-family: impact, arial-black; /* 設定成比較粗的字體 */
+paint-order: stroke; 
+} 
+h1:nth-child(1) {-webkit-text-stroke: 2px red;} 
+h1:nth-child(2) {-webkit-text-stroke: 3px yellowgreen;} 
+h1:nth-child(3) {-webkit-text-stroke: 5px orange;} 
+
+h1 {
+      margin: 10px;
+      padding: 0;
+      width: max-content;
+      font-family: Impact, Arial Black;
+      font-size: 80px;
+      line-height: 1;
+    }
+
+    /* 純色漸層 */
+    .a0 {
+      color: transparent;
+      background: linear-gradient(#f00, #f90, #fd0, #0c0, #09f);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    /* 修正語法錯誤的漸層（合法顏色） */
+    .a1 {
+      color: transparent;
+      background: linear-gradient(#f00, #f90, #fd0, #0c0, #09f);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    /* 雙色分割 */
+    .a2 {
+      color: transparent;
+      background: linear-gradient(#f00 50%, #fa0 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    /* 使用圖片背景 */
+    .a3 {
+      color: transparent;
+      background: url(https://steam.oxxostudio.tw/image/index-css.jpg) no-repeat center;
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .eve{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="oy">
+        <h2>#</h2>
+        </div>
+        <nav>
+            <div>
+            <ul>
+                <li><a  class="accttiv" href="#">首頁</a></li>
+                <li><a href="#">文字方框</a></li>
+                <li><a href="#">文字背景作品</a></li>
+                <li><a href="#">聯繫</a></li>
+            </ul>
+            </div> 
+        </nav>
+        <main>
+            <h1 class="ch1" id="text1">Hello</h1>
+            <h1>HaHaHa</h1>
+            <h1>Hi~~</h1>
+            <hr>
+            <h1 class="a0" id="text2">VFX</h1>
+            <h1 class="a1">CCTV</h1>
+            <h1 class="a2">CGI</h1>
+            <h1 class="a3">Compsiting</h1>
+            <hr>
+            <div class="eve" style="text-align: center;">
+            <h2>聯繫</h2>
+            <a href="https://www.instagram.com/bill_0830_/reels/">IG</a>
+            </div>
+        </main>
+    </header>
+    <div class="oy">
+    <footer>
+        <p style="text-align: center;">&copy;All Rights Reserved;</p>
+    </footer>
+    </div>
+</body>
+</html>
