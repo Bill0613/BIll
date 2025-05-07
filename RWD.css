@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.head{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.iner{
+    display: flex;
+}
+.item {
+
+flex: none;
+width: 280px;
+margin: 10px;
+}
