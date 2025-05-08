@@ -4,13 +4,20 @@
 }
 .menu-toggle {
     display: none;
+    flex-direction: column;
     cursor: pointer;
-    z-index: 1000;
     position: absolute;
     top: 10px;
-    left: 20px;
+    right: 20px;
+    z-index: 999;
 }
-
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
 /* 手機版 RWD 顯示設定 */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -20,7 +27,7 @@
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(255, 145, 0, 0.95);
         position: absolute;
         top: 50px;
         left: 0;

@@ -134,14 +134,14 @@ nav a:hover::after {
     </div>
     </header>
 
-    <script>
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('nav-menu');
-    
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            toggle.classList.toggle('active'); // 加這行讓動畫觸發
-        });
-    </script>
+   <script>
+    const toggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('header ul'); // 建議改這樣選取 ul
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+});
+   </script>
 </body>
 </html>
