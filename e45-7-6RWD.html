@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南景點文繞圖</title>
+    <link rel="stylesheet" href="RWD.css">
+    <style>
+               *{
+            padding: 0px;
+            margin: 0px;
+           
+        }
+       header a{
+        text-decoration: none;
+        color: rgb(102, 159, 209);
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       header li{
+        display: inline;
+       }
+       header a{
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        .accttiv{
+            background-color: rgba(127, 255, 212, 0.493);
+        }
+      header a:hover{
+        color: rgb(255, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; left: 1vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+        nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; }  
+
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(0, 181, 236);
+        }
+        .iner {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+        }
+        .item {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .text {
+            background-color: rgb(124, 233, 133);
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .text:hover {
+            background-color: rgb(255, 149, 0);
+        }
+        .left img {
+            margin-right: 10px;
+        }
+        .right img {
+            margin-left: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="nav" id="nav-menu">
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">關於</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">聯繫</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+        
+    </div>
+    </nav>
+    <div>
+        <h2 style="text-align: center;" class="head">〈台南景點介紹(4)</h2>
+    </div>
+    <div class="iner">
+        <div class="item left">
+            <img src="6.jpg" width="20" height="20" alt="林百貨">
+            <p class="text">林百貨，台南的歷史地標，曾是台灣最早的百貨公司之一，如今仍然保留濃厚的昭和時代風情。</p>
+        </div>
+        <div class="item right">
+            <p class="text">台南孔廟，全台首學，見證了台灣的教育發展，是文化與歷史愛好者的必訪之地。</p>
+            <img src="IMG_0273P01.jpg" alt="孔廟">
+        </div>
+        <div class="item left">
+            <img src="DDEE.jfif" width="20" height="20" alt="赤崁樓">
+            <p class="text">赤崁樓，昔日的荷蘭城堡，如今成為台南的象徵，夜晚燈光點綴，更添一番風味。</p>
+        </div>
+        <div class="item right">
+            <p class="text">國華街，美食天堂，各種小吃讓人垂涎三尺，是台南人與遊客最愛的覓食地。</p>
+            <img src="unnamed.jpg" alt="國華街">
+        </div>
+    </div>
+    </header>
+
+   <script>
+    const toggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('header ul'); // 建議改這樣選取 ul
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+});
+   </script>
+</body>
+</html>
