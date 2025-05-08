@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南景點文繞圖</title>
+    <link rel="stylesheet" href="RWD.css">
+    <style>
+               *{
+            padding: 0px;
+            margin: 0px;
+           
+        }
+       header a{
+        text-decoration: none;
+        color: rgb(102, 159, 209);
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       header li{
+        display: inline;
+       }
+       header a{
+            position: relative;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        .accttiv{
+            background-color: rgba(127, 255, 212, 0.493);
+        }
+      header a:hover{
+        color: rgb(0, 0, 0);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; left: 1vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+        nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; }  
+
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(0, 181, 236);
+        }
+        .iner {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+        }
+        .item {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .text {
+            background-color: rgb(124, 233, 133);
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .text:hover {
+            background-color: rgb(255, 149, 0);
+        }
+        .left img {
+            margin-right: 10px;
+        }
+        .right img {
+            margin-left: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="nav" id="nav-menu">
+        <ul>
+            <li><a href="#">FX3</a></li>
+            <li><a href="#">A7M4</a></li>
+            <li><a href="#">A7S3</a></li>
+            <li><a href="#">A7C</a></li>
+            <li><a href="#">R5C</a></li>
+            <li><a href="#">R5ii</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+        
+    </div>
+    </nav>
+    <div>
+        <h2 style="text-align: center;" class="head">〈台南景點介紹(4)</h2>
+    </div>
+    <div class="iner">
+        <div class="item left">
+            <img src="FX3.jpg" width="20" height="20" alt="FX3">
+            <p class="text">Sony 的 Cinema Line FX3 數位相機能夠忠實呈現創作者的願景與熱忱。
+                不只提供驚人的電影效果，也具備可靠性能，且操作流暢，能滿足當今創作社群的需求。體積輕盈小巧，方便攜帶與操作。</p>
+        </div>
+        <div class="item right">
+            <p class="text">Sony A74是A系列首次在影片與靜態影像拍攝支援鳥眼偵測，相機驚人的速度與精準度可讓您自動追蹤特定禽鳥，不會受到快速、出人意料的動作影響。 在錄製高達30p的4K影片時，還可進行全片幅7K超採樣，進而獲得高解析度、極致細膩的4K畫質。</p>
+            <img src="A74.jpg" alt="A7M4">
+        </div>
+        <div class="item left">
+            <img src="A7S3.jpg" width="20" height="20" alt="A7S3">
+            <p class="text">α7S III 的標準ISO 範圍可達驚人的80-102,400，拍攝靜態影像時更可擴充到40-409,600，為您開啟發揮創意的無窮機會。 與前一代α7S II 相比，新開發的感光元件與影像處理演算法能帶來更清晰的影像與更自然的質感，即使在接近完全黑暗的情境下拍攝，性能也不受影響</p>
+        </div>
+        <div class="item right">
+            <p class="text">α7C 體積小巧全片幅功能 α7C1 結合FE 28-60 mm F4-5.6 鏡頭，能以全球最小最輕的2相機和鏡頭系統，達成不容妥協的全片幅畫質。 機身輕巧但卻符合對於影像品質、自動對焦及速度的高度期待。 不論您身在何處，α7C 都能隨時提升您的創意力，是一部各方面表現俱佳的相機</p>
+            <img src="A7C.jpg" alt="A7C">
+        </div>
+        <div class="item left">
+            <img src="R5C.png" width="20" height="20" alt="R5C">
+            <p class="text">EOS R5 C 結合了EOS R5 高解析度相片拍攝功能及Cinema EOS 高效的影片拍攝功能，搭載4500 萬像素全片幅CMOS 影像感測器、8K 60P 無限時影片錄影，將卓越解析度和影片效能集於一身，加上採用RF 接環除了可使用一系列高畫質的RF 鏡頭</p>
+        </div>
+        <div class="item right">
+            <p class="text">EOS R5 Mark II 配備全新開發的 Accelerated Capture 加速捕捉系統及深度學習技術，帶來各種革命性的新功能。EOS R5 Mark II的 4,500萬像素全片幅背照堆疊式 CMOS影像感測器，支援電子快門每秒 30張連續拍攝及機內記錄 8K DCI 60p Light RAW 及 4K 120p MP4。新一代的雙像素智慧自動對焦 (Dual Pixel Intelligent AF)系統，新加入動作優先自動對焦及註冊人物優先等先進功能，再配合眼球控制自動對焦，為自動對焦追蹤帶來革命性效能。</p>
+            <img src="R52.jpg" alt="A7C">
+    </div>
+    </header>
+
+   <script>
+    const toggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('header ul'); // 建議改這樣選取 ul
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+});
+   </script>
+</body>
+</html>
