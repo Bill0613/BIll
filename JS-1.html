@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+        }
+         header a{
+            position: relative;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 900;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .accttiv{
+            background-color: rgba(127, 255, 212, 0.719);
+        }
+      header a:hover{
+        color: rgb(255, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; right: 6vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+        nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a class="accttiv" href="#">首頁</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">接觸</a></li>
+                <li><a href="#">報價</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script> 
+        //data type 資料 
+        16 
+        "Hello" 
+        true 
+        //在console顯示資料 
+        console.log(3.1416) 
+        console.log("Hello") 
+        console.log(false) 
+        //宣告變數: let 變數名稱 
+        let x; 
+        x=10; 
+        console.log(x); 
+        let abc="你好"; 
+        console.log(abc); 
+        //常數 
+        const z=100; 
+        console.log(z); 
+        z=50;//錯誤,不能變更常數中的資 
+        </script>
+        <script>
+     //算術運算 
+       let x = 7% * 3 
+       log(x) ; 
+    //指定運算 
+       x + 1 
+       console.log(x);//會算出甚麼? 
+    //比較運算 
+       x = 3 > 4 
+       log(x) ; 
+    //單元運算!,++,--
+       x=!x; 
+       log(x) 
+x++; //會得到甚麼? 
+    //邏輯運算 &&, || 
+       let test=true || false; //會印出甚麼? 
+       console.log(test);
+</script>
+
+<script>
+var X = prompt("輸入0~100的數字",""); 
+if (X >= 60){ 
+console.log("及格!"); 
+window.alert("及格!"); 
+}else{ 
+console.log("不及格!"); 
+window.alert("不及格!"); 
+} 
+</script>
+<script> 
+    //break 
+    let n=0; 
+    while(n<3){ 
+    if(n==2){ 
+    } 
+    break; //強迫結束迴圈 
+    console.log(n); 
+    } 
+    n++; 
+    //continue 
+    for (let n=0;n<5;n++){ 
+    if(n%2==0){ //如果除以2的餘數為 
+    continue; //強迫回到迴圈上方,忽略下面指令,進入下一圈 
+    console.log(n) 
+    } 
+    } 
+    </script>
+</body>
+</html>
