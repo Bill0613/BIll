@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>我喜歡喝的飲料</h2>
+    <script>
+      let drinks = ['紅茶', '珍珠奶茶', '綠茶', '檸檬紅茶', '紅茶珍珠', '青茶'];
+
+      document.write('<table border="1">');
+      for(let i = 0; i < drinks.length; i++) {
+        document.write('<tr><td>飲料' + (i + 1) + '</td>');
+        document.write('<td>' + drinks[i] + '</td></tr>');
+      }
+      document.write('</table>');
+    </script>
+</body>
+</html>
