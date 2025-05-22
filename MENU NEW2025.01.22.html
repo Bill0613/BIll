@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* 防止横向滚动条 */
+        }
+
+        /* 隱藏 checkbox */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* 漢堡按鈕，永遠顯示 */
+        .menu-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .menu-btn span {
+            display: block;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* 點擊變 X */
+        #menu-toggle:checked + .menu-btn .bar1 {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+        #menu-toggle:checked + .menu-btn .bar2 {
+            opacity: 0;
+        }
+        #menu-toggle:checked + .menu-btn .bar3 {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        /* 選單預設隱藏 */
+        nav ul {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #f8f8f8;
+            width: 100vw;
+            height: 100vh;
+            padding: 50px 0;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            transition: max-height 0.3s ease;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 28px;
+            padding: 8px 15px;
+            position: relative;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Hover效果：底線 */
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 3px;
+            width: 0;
+            background-color: aqua;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+
+        /* 點擊後選單顯示 */
+        #menu-toggle:checked ~ nav ul {
+            display: flex;
+        }
+
+        /* 桌機寬度更大時選單位置改成靠左 */
+        @media (min-width: 1024px) {
+            nav ul {
+                top: 50px;
+                left: auto;
+                right: 20px;
+                width: 250px;
+                height: auto;
+                padding: 20px 0;
+            }
+        }
+
+        /* header 設定 */
+        header a {
+            position: relative;
+            text-decoration: none;
+            color: rgb(181, 53, 206);
+            font-size: 20px;
+        }
+
+        header a:hover {
+            color: aqua;
+        }
+
+        header li {
+            display: inline;
+        }
+
+        header ul {
+            position: absolute;
+            right: 6vw;
+            top: 0.1vw;
+            letter-spacing: 0.1px;
+        }
+    </style>
+</head>
+<body>
+      <!-- 漢堡按鈕 -->
+      <input type="checkbox" id="menu-toggle">
+      <label class="menu-btn" for="menu-toggle">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+      </label>
+  
+      <!-- 全頁展開的選單 -->
+      <nav>
+          <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">關於我</a></li>
+              <li><a href="#">作品集</a></li>
+              <li><a href="#">聯絡</a></li>
+          </ul>
+      </nav>
+</body>
+</html>
