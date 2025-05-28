@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bt"  onclick="change()">關於我！</button>
+    <button id="btn"  onclick="changeg()">學經歷</button>
+       
+    <script>
+         function change(){
+             document.body.innerHTML="我是一個會做網頁會做3D動畫的五專學生"
+            let elem=document.querySelector("#comtent")
+            elem.innerHTML="我是一個會做網頁會做3D動畫的五專學生"
+            elem.style.fontsize="20px";
+            elem.style.color="red";
+        }
+    </script>
+    <script>
+        function changeg(){
+            document.body.innerHTML="南台科大資工系"
+            let elem=document.querySelector("#comtent")
+        }
+    </script>
+</body>
+</html>

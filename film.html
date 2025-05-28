@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>影像公司點餐系統</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #ffffff;
+    }
+    h2 {
+      color: #333;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      background: #e0f7fa;
+      border: 1px solid #04e2ff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📅 今天是：2025/05/28（三）</h2>
+
+  <div class="section">
+    <h3>請選擇您的部門：</h3>
+    <label><input type="checkbox" name="department" value="燈光組">個人創作者</label>
+    <label><input type="checkbox" name="department" value="造型組">製作團隊</label>
+    <label><input type="checkbox" name="department" value="客戶"> 客戶</label>
+  </div>
+
+  <div class="section">
+    <h3>請選擇您的服務：</h3>
+    <label><input type="radio" name="meal" value="產品動畫">產品動畫</label>
+    <label><input type="radio" name="meal" value="40秒CF網路廣告">40秒CF網路廣告</label>
+    <label><input type="radio" name="meal" value="影片剪輯">影片剪輯</label>
+    <label><input type="radio" name="meal" value="VFX視覺特效製作">VFX視覺特效製作</label>
+    <label><input type="radio" name="meal" value="色彩校正">色彩校正</label>
+  </div>
+
+
+
+  <button id="myBtn" class="myBtn" onclick="showAlert()">📤 提交點餐</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+            function showAlert() {
+              window.alert("你點到按鈕啦~");
+            }
+      const result = `
+        ✅ 您的服務已送出！ 等待我們與您聯絡<br>
+        <strong>部門：</strong> ${departments}<br>
+        <strong>服務：</strong> ${meal.value}<br>
+        <strong>備註：</strong> ${note || "無"}
+      `;
+  </script>
+</body>
+</html>
