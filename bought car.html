@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            display:inline;
+            color: aquamarine;
+        }
+        .btn:hover{
+            transition: 0.5s ease;
+            transform: scale(100%)
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showAlert()">重新整理</button>
+    <div class="btn">
+    <img src="ASUS-ProArt-.jpg" width="200" height="200">
+    <button>加入購物車</button>
+    </div>
+    <div class="btn">
+        <img src="61PEBTiIq6L.jpg" width="250" height="200">
+        <button>加入購物車</button>
+        </div>
+        <script>
+            function showAlert() {
+              alert("✨已重新整理");
+            }
+             //指定
+        localStorage.setItem("price",1000);
+        //取得
+        const price =localStorage.getItem("price")
+        console.log(price);
+        //資料型態
+        console.log(typeof price);
+        //刪除
+        //localStorage.removeItem("price")
+            </script>
+</body>
+</html>
