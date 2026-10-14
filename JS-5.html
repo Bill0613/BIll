@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 建立陣列
+        let grades = [70, 50, 84];
+        grades.push(35);
+        grades.push(100);
+        console.log(grades.length);
+
+        // 假設參數 利用for迴圈
+        // 會計總和和平均分數
+        total = 0;
+        for (let i = 0; i < grades.length; i++) {
+            total += grades[i];
+        }
+
+        document.write("總和是 " + total + "<br>");
+        let avg = total / grades.length;
+        document.write("平均是 " + avg + "<br>");
+    </script>
+</body>
+</html>

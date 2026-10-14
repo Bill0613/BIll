@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .o{
+           background-color: black;
+           color: aliceblue;
+        }
+        header a{
+            position: relative; /*這個定位超~重~要~*/
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+      header a:hover{
+        color: rgb(255, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; right: 6vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+     header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: rgb(252, 177, 177);
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; } 
+    
+ .footer{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }   
+h3 { 
+margin: 10px; 
+font-size: 20px; 
+} 
+.a {text-shadow: red lem 5px 10px;} 
+.b {text-shadow: green 0.3em 0.3em 0.2em;} 
+.c {text-shadow: #00000066 2px 2px 2px;} 
+
+
+.text-block {
+    font-size: 2em; /* Adjust font size as needed */
+    font-weight: 900;
+  }
+
+  .red-line {
+    background-color: red;
+    height: 10px;
+    width: 30%;
+  }
+
+  .green-wave {
+    position: relative;
+  }
+
+  .green-wave::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%; /* Adjust vertical position of the wave */
+    height: 20px; /* Adjust wave height */
+    width: 30%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 C 20 0, 40 10, 60 5 C 80 0, 100 10, 100 5 L 100 10 L 0 10 Z" fill="green"/></svg>');
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+
+  .orange-line {
+    background-color: orange;
+    height: 5px;
+    width: 30%;
+    position: relative;
+    top: 50%; /* Adjust vertical position of the line */
+    transform: translateY(-50%);
+  }
+
+  .blue-wave {
+    position: relative;
+  }
+
+  .blue-wave::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%; /* Adjust vertical position of the wave */
+    height: 25px; /* Adjust wave height */
+    width: 30%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 C 15 10, 35 0, 50 5 C 65 10, 85 0, 100 5 L 100 10 L 0 10 Z" fill="blue"/></svg>');
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+h3 { margin: 10px; font-size: 20px; 
+} 
+.a {text-emphasis;fill: rgb(255, 0, 0);} 
+.b {text-emphasis-style: ;fill;
+    text-emphasis-color:red;
+} 
+.c {text-emphasis:open orange;} 
+.d {text-emphasis:triangle rgb(119, 14, 119);} 
+.e {text-emphasis:"哈" lch(50% 50 8180/0.6);} 
+.rtx{
+    font-weight: 900;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.ma{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+h3 { 
+margin: 10px; 
+font-size: 20px; 
+} 
+.d {text-shadow: red lem 6px 10px;} 
+.e-line {text-shadow: green 0.3em 0.3em 0.2em;} 
+.f {text-shadow: #00000066 30px 30px 20px;}
+
+.hp{
+    font-size: 40px;
+    font-weight: 900;
+}
+.ha{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hb{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(41, 179, 133, 0.822);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between lines */
+    padding: 20px;
+    font-size: 1.5em; /* Adjust default font size */
+  }
+
+  .line1 {
+    font-weight: normal;
+  }
+
+  .line2 {
+    font-style: italic;
+  }
+
+  .line3 {
+    text-decoration: underline;
+  }
+
+  .line4 {
+    font-weight: bold;
+  }
+
+  .line5 {
+    font-size: 1.2em; /* Slightly smaller font */
+  }
+
+  .line6 {
+    font-weight: bold;
+    font-size: 1.8em; /* Slightly larger and bold */
+  }
+
+  .line7 {
+    letter-spacing: 2px; /* Add some letter spacing */
+  }
+
+  .line8 {
+    text-shadow: 2px 2px 5px lightgray; /* Add a subtle shadow */
+  }
+  .work{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.rbx{
+    position: relative;
+    text-shadow: 
+            0px 0px 10px rgb(255, 102, 0),
+            0px 0px 10px rgb(255,
+            102, 0),0px 0px 10px rgb(255, 102, 0);
+}
+  .grid-9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3欄 */
+  gap: 10px;                              /* ✅ 格子間距 */
+  max-width: 640px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.grid-9 img {
+  width: 100%;               /* ✅ 滿版圖片 */
+  height: 100%;
+  aspect-ratio: 1/1;         /* ✅ 保持正方形格子 */
+  object-fit: cover;         /* ✅ 圖片裁切不變形 */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(189, 166, 166, 0.1);
+}
+
+.grid-9 img:hover {
+  transform: scale(1.10);    /* ✅ 滑鼠放大效果 */
+}
+  
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="o">HI</h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">profilo</a></li>
+                <li><a href="#">join</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="ma">
+            <marquee>今天學CSS文字定義～耶！</marquee>
+            </div>
+                <div class="text-block">今天心情好!!</div>
+                <div class="red-line"></div>
+                <div class="text-block green-wave">今天心情好!!</div>
+                <div class="text-block">
+                  <span style="position: relative;">
+                    今天心情好!!
+                    <div class="orange-line"></div>
+                  </span>
+                </div>
+                <div class="text-block blue-wave">今天心情好!!</div>
+                <br>
+                <div class="rtx">
+                    <div class="a">Designer</div>
+                    <div class="b">Designer</div>
+                    <div class="c">Designer</div>
+                    <div class="d">Designer</div>
+                    <div class="e">Designer</div>
+                </div>
+                <br>
+                <div class="hp">
+                    <div class="ha">Happy Birthday</div>
+                    <div class="hb">生日快樂</div>
+                </div>
+                <div class="container">
+                    <div class="line1">Happy Birthday 生日快樂</div>
+                    <div class="line2">Happy Birthday 生日快樂</div>
+                    <div class="line3">Happy Birthday 生日快樂</div>
+                    <div class="line4">Happy Birthday 生日快樂</div>
+                    <div class="line5">Happy Birthday 生日快樂</div>
+                    <div class="line6">Happy Birthday 生日快樂</div>
+                    <div class="line7">Happy Birthday 生日快樂</div>
+                    <div class="line8">Happy Birthday 生日快樂</div>
+                  </div>
+                  <br>
+                  <hr>
+                  <div class="work">
+                    <h1 style="text-align: center;">作業</h1>
+                    <div class="grid-9">
+                        <h3>程政綜</h3>
+                    <div class="rbx">
+                        <p style="text-align: center;">不用很厲害才開始，要先開始才會很厲害~~~</p>
+                        <br>
+                        <p style="text-align: center;">電影是我們最接近夢境的事物。</p>
+                    </div>
+                    </div>
+                    <div class="grid-9 img">
+                        <img src="1000008778.png" style="border-radius: 70%;">
+                    </div>
+                   
+
+                  </div>
+        </main>
+    </header>
+<div class="footer">
+    <footer>
+        <p>&copy;2025</p>
+    </footer>
+</div>
+</body>
+</html>

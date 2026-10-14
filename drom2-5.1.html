@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>關於我 / 學經歷 切換</title>
+</head>
+<body>
+
+  <div>
+    <span onclick="showAbout();">關於我</span>
+    <span onclick="showExps();">➤ 學經歷</span>
+  </div>
+
+  <br>
+
+  <!-- 初始顯示的區塊 -->
+  <div id="about">大家好，我是邱鈺茗</div>
+
+  <!-- 初始隱藏的區塊 -->
+  <div id="exps" style="display:none">我是南台科技大學五專資工系的學生</div>
+
+  <script>
+    // 顯示「學經歷」，隱藏「關於我」
+    function showExps() {
+      document.querySelector("#about").style.display = "none";
+      document.querySelector("#exps").style.display = "block";
+    }
+
+    // 顯示「關於我」，隱藏「學經歷」
+    function showAbout() {
+      document.querySelector("#about").style.display = "block";
+      document.querySelector("#exps").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

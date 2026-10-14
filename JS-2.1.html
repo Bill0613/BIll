@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+        }
+         header a{
+            position: relative;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .accttiv{
+            background-color: rgba(127, 255, 212, 0.493);
+        }
+      header a:hover{
+        color: rgb(255, 255, 255);
+      }
+      header li{
+        display: inline;
+      }
+     header ul{
+           position: absolute; right: 6vw; top: 0.1vw;
+           letter-spacing: 0.1px;
+        }
+        nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;                       
+    height: 3px;
+    width: 0;                           
+    background-color: aqua;
+    transition: 0.3s ease;              
+}
+nav a:hover::after {
+    width: 100%; }   
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a class="accttiv" href="#">首頁</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">接觸</a></li>
+                <li><a href="#">報價</a></li>
+            </ul>
+        </nav>
+        <script>
+            //沒有回傳值 
+function divide(n1, n2){ 
+let result=n1/n2; 
+alert(result); 
+} 
+divide(4,2); 
+//有回傳值 
+/*function divide(n1, n2){ 
+let result=n1/n2; 
+return result; 
+} 
+let ans divide(4,2) 
+ans=ans*10; 
+alert(ans);*/
+        </script>
+    </header>

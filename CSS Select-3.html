@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selet</CSS-Sele></title>
+    <style>
+        *{
+          padding: 0px;
+          margin: 0px;
+        }
+        header{
+            background-color: rgb(0, 0, 0);
+            height: 60px;
+            color: white;
+        }
+        header a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        header a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        header li{
+            display: inline;
+        }
+        header ul{
+            position: absolute; right: 6vw; top: 1vw;
+            letter-spacing: 0.5vw;
+        }
+        .select{
+            color: rgb(0, 0, 0);
+        }
+        .select :hover{
+            color: rgb(0, 0, 0);
+            box-shadow: 3;
+        }
+        h1 + span {
+            color: red;
+            font-size: 20px;
+        }    
+        h1 > span {color: blue; }  
+        .bbt{
+           background-image: url(bid.jpg); width: 10; height: 10; border-radius: 70px;
+           background-repeat: repeat;
+           background-size: auto;
+           border: 15px solid; color: aqua;
+           height: 1000px;
+           
+        }
+        .bOt{
+           background-image: url(images.jpg),url(DDEE.jpg);
+           background-repeat: no-repeat;
+           background-size: auto;
+           border: 5px solid; color: aqua;
+           height: 500px;
+           background-position: right top;,right: bottom;
+        }
+        .about{
+            color: black;
+        }
+        .footer{
+            background-color: black;
+            height: 30px;
+            color: white;
+            font-size: 20px;
+        }
+        .rr{
+            color: black;
+            font-size: 20px;
+        }
+        .yy{
+        width:50%; height:200px; 
+        text-align: center;
+        background:linear-gradient( 90deg,
+        red 0%, red 15%,
+        orange 15%, orange 30%,
+        yellow 30%, yellow 45%,
+        green 45%, green 60%,
+        blue 60%, blue 75%,
+        indigo 75%, indigo 90%,
+        black 90%, black 100%)
+        }
+        .work{
+            color: black;
+            background:repeating-radial-gradient(circle, rgb(0, 140, 255), rgb(39, 98, 165), rgb(138, 173, 202) 100%, rgb(255, 255, 255) 150%, red 200%);
+            height: 500px;
+            font-size: 25px;
+        }
+        .work :hover{
+            color: rgb(235, 224, 224);
+            height: 50px;
+            font-size: 25px;
+        }
+        #grad{
+            background-image: coonic-grdeint
+        }
+        #grad{
+          background-image: conic-gradient(red 0dg,red 90deg,yellow 90deg,yellow 180deg,green 180deg,blue 270deg
+          blue 270deg);
+          border-radius: 70%;
+          width: 200px;
+          height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">4/9作品</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">聯絡</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="select">
+               <div style="text-align: center; ;">
+                <h1>選擇器測試<span>我是藍色</span></h1>
+                <span>hello world!!</span>
+               </div>
+            </section>
+            <HR>
+            <section class="about">
+                <div style="text-align: center;">
+                    <h2>我是程政綜</h2>
+                    <p style="text-align: center;"></p>
+                </div>
+            </section>
+            <div class="bbt" style="text-align: center; color: rgb(0, 0, 0);">
+                <h2>背景圖片</h2>
+            </div>
+            <hr>
+            <div class="bOt" style="text-align: center; color: rgb(0, 0, 0);">
+                <h2>背景圖片</h2>
+            </div>
+            <div class="rr" style="text-align: center;">
+                <pre>
+            林百貨，台南的歷史地標，曾是台灣最早的百貨公司之一，
+            如今仍然保留濃厚的昭和時代風情。
+            台南孔廟，全台首學，見證了台灣的教育發展，
+            是文化與歷史愛好者的必訪之地。
+                </pre>
+            </div>
+            <div class="yy" style="text-align: center;"></div>
+            <hr>
+            <div style="text-align: center;">
+                <h1 style="background: repeating-linear-gradient(to right, rgb(102, 102, 97) 0%, rgb(226, 146, 8) 20%);">春曉</h1>
+                <h1 style="background: repeating-linear-gradient(to top right, rgb(0, 0, 0) 0%, white 25%, rgb(78, 78, 82) 50%);">送別</h1>
+                <h1 style="background:repeating-radial-gradient(rgb(0, 0, 0), rgb(77, 77, 71) 20px, rgb(255, 255, 255) 40px);">紅豆</h1>	
+                <h1 style="background:repeating-radial-gradient(circle, red, yellow, lightgreen 100%, yellow 150%, red 200%);">雜詩</h1>
+            </div>
+            <hr>
+            <section class="work">
+                <div style="text-align: center;">
+                    <h2>作業</h2>
+                    <pre>
+            嗨～我是政綜Bill，一名正在闖蕩影視特效世界的學生，
+            夢想是成為會動的創作高手。
+            我會用 Fusion 跟 Blender 做動畫和視覺特效，主攻產品動畫希望作品越來越有故事感。
+            平常喜歡跟有共同興趣的人交流技術，但也在努力突破社交圈，希望找到一些熱愛創作
+            願意一起成長的夥伴！
+            如果你也是個有點宅、有點熱血、腦中裝滿點子的創作者，
+            歡迎來搭話，一起成長爆發創意火花！
+                    </pre>
+                </div>
+                <img src="490062786_3685125421784847_1859620632605467130_n-removebg-preview.png" width="300px" height="200">
+                <img src="bid-removebg-preview.png" width="300px" height="200" style="position: absolute; right: 0.1vw;">
+            </section>
+            <div id="grad"></div>
+        </main>
+        <div class="footer">
+        <footer>
+            <p style="text-align: center;">&copy;2025 程政綜 </p>
+        </footer>
+        </div>
+    </header>
+</body>
+</html>

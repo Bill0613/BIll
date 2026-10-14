@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 隱藏 checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* 漢堡按鈕（永遠顯示） */
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.menu-btn span {
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* 點擊變 X */
+#menu-toggle:checked + .menu-btn .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+#menu-toggle:checked + .menu-btn .bar2 {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* 預設選單隱藏 */
+nav ul {
+  display: none;
+}
+
+/* 展開後選單滿版 */
+#menu-toggle:checked ~ nav ul {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 1000;
+}
+
+/* 每個項目排版 */
+nav ul li {
+  margin: 20px 0;
+  display: inline;
+}
+
+/* 超連結樣式 */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(181, 53, 206);
+  font-size: 28px;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+/* hover 效果 */
+nav ul li a:hover {
+  color: aqua;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 0;
+  background-color: aqua;
+  transition: 0.3s ease;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* 當前選單項目的背景 */
+.accttiv {
+  background-color: rgba(127, 255, 212, 0.493);
+}
+
+/* 可加可不加，看你要不要右上固定 */
+nav ul {
+  letter-spacing: 0.1px;
+}
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-btn" for="menu-toggle">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </label>
+    
+    <nav class="nav" id="nav-menu">
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">聯繫</a></li>
+            </ul>
+            <script>  
+                const jsonData = '{ "age": 18 }';
+                const man = JSON.parse(jsonData);
+                const output = document.getElementById("output");
+                output.innerHTML += "Hello world<br>";
+                if (man.age >= 20) {
+                    output.innerHTML += "我已經成年了。<br>";
+                } else {
+                    output.innerHTML += "我還未成年。<br>";
+                }
+                output.innerHTML += "Hello world 年齡 " + man.age + "<br>";
+            </script>
+
+</body>
+</html>

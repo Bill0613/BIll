@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>花卉介紹</title>
+  <style>
+    .tab {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 5px;
+      border: 1px solid #aaa;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: #ff7b00;
+      font-weight: bolder;
+    }
+
+    .content {
+      border: 1px solid #000000;
+      padding: 15px;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!-- 頁籤按鈕 -->
+<div>
+  <div class="tab active" onclick="showTab('hydrangea')">繡球花</div>
+  <div class="tab" onclick="showTab('orchid')">文心蘭</div>
+  <div class="tab" onclick="showTab('vfc')">蘭花</div>
+  <div class="tab" onclick="showTab('gaba')">龜背芋</div>
+</div>
+
+<!-- 花卉介紹內容 -->
+<div id="hydrangea" class="content active">
+  <h3>花卉介紹</h3>
+  <p>1. 繡球花</p>
+  <p>2024繡球花季到啦！每年5月至6月初夏季節，粉藍、粉紫、粉紅等各場、明池森林遊樂區等，精選全台超過10處觀賞繡球花的推薦景點。</p>
+</div>
+
+<div id="orchid" class="content">
+  <h3>花卉介紹</h3>
+  <p>2. 文心蘭</p>
+  <p>文心蘭又名跳舞蘭，花姿輕盈、色澤鮮黃，是台灣常見花卉之一，盛開時像群舞精靈在跳舞，適合花藝與裝飾。</p>
+</div>
+<div id="vfc" class="content">
+  <h3>花卉介紹</h3>
+  <p>3. 蘭花</p>
+  <p>蘭科（學名：Orchidaceae）植物俗稱蘭花。是開花植物中的第二大科[2]，是最多樣、最廣布的科之一。</p>
+</div>
+<div id="gaba" class="content">
+<h3>花卉介紹</h3>
+  <p>3. 龜背芋</p>
+  <p>//我最愛的植物//
+  </p>
+  <p>龜背芋，又稱為龜背竹、鳳梨蕉、蓬萊蕉及電信蘭，是天南星科龜背芋屬植物。</p>
+</div>
+
+<!-- JavaScript 切換頁籤 -->
+<script>
+  function showTab(tabId) {
+    // 移除所有tab與內容的active狀態
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".content");
+
+    tabs.forEach(tab => tab.classList.remove("active"));
+    contents.forEach(content => content.classList.remove("active"));
+
+    // 加上被選到的tab與內容的active
+    document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add("active");
+    document.getElementById(tabId).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
